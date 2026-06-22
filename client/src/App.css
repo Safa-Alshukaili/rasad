@@ -1,0 +1,349 @@
+/* client/src/App.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  color: white;
+  padding: 12px 24px;
+}
+
+.app-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.app-header nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.app-header nav a,
+.app-header nav button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.app-header nav button {
+  background: #ef4444;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.page {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.auth-form {
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  width: 360px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.auth-form input,
+.auth-form select,
+.report-form input,
+.report-form textarea,
+.report-form select {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.auth-form button,
+.report-form button {
+  margin-top: 18px;
+  padding: 10px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.error-box {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.success-box {
+  background: #dcfce7;
+  color: #166534;
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-form label {
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.location-confirm {
+  color: #166534;
+  font-size: 14px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #eff6ff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.hotspots-section {
+  background: #fff7ed;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  margin-bottom: 12px;
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reports-table th,
+.reports-table td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.ai-badge {
+  font-size: 11px;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.report-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.report-image {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.report-meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.badge {
+  background: #e5e7eb;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.status-new { background: #fde68a; }
+.status-in_progress { background: #bfdbfe; }
+.status-resolved { background: #bbf7d0; }
+.status-rejected { background: #fecaca; }
+
+.status-note {
+  font-size: 13px;
+  color: #4b5563;
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* ===== صورة مصغّرة بجدول لوحة الموظف ===== */
+.report-thumbnail {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  transition: transform 0.15s ease;
+}
+
+.report-thumbnail:hover {
+  transform: scale(1.08);
+}
+
+.no-image {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* ===== نافذة معاينة الصورة المكبّرة ===== */
+.image-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.image-modal-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== شريط نطاق القسم بلوحة الموظف ===== */
+.department-scope-banner {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.toggle-all-departments {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #4338ca;
+}
+
+/* ===== مفتاح الألوان بخريطة البلاغات ===== */
+.map-legend {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.map-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.map-legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #1f2937;
+  display: inline-block;
+}
