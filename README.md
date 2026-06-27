@@ -82,11 +82,11 @@
 
 **تسجيل الدخول**
 
-![تسجيل الدخول](./screenshots/01-login.png)
+![(./screenshots/01-login.png)](./screenshots/01-login.png)
 
 **إنشاء حساب جديد** — اختيار نوع الحساب (مواطن / موظف)
 
-![إنشاء حساب جديد](./screenshots/02-register.png)
+![(./screenshots/02-register.png)](./screenshots/02-register.png)
 
 موظف جهة حكومية يحدّد قسمه عند التسجيل (طرق / مياه / كهرباء / نفايات / عام):
 
